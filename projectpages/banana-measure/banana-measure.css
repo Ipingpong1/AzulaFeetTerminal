@@ -41,3 +41,20 @@ header{
     background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text;
     color: transparent;
   }
+
+#img{
+    position: relative;
+    left: 10%;
+}
+
+#inputs{
+    position: relative;
+    left: 55%;
+    bottom: 730px;
+}
+
+#calcbutton{
+    position: relative;
+    bottom: 680px;
+    left: 15%;
+}
