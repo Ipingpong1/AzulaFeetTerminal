@@ -40,6 +40,11 @@ function keypress(e){
                         window.open('projectpages/banana-measure/banana-measure.html','Banana Measuring Calculator')
                         passed = true
                         break
+
+                    case '!club-penguin-miner':
+                        window.open('projectpages/club-penguin-autominer/club-penguin-autominer.html','Club Penguin Autominer')
+                        passed = true
+                        break
                 
                 case '!resume':
                     window.open('ResumeFinal-min-1.png')
