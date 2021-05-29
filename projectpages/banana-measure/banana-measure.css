@@ -50,11 +50,21 @@ header{
 #inputs{
     position: relative;
     left: 55%;
-    bottom: 730px;
+    bottom: 940px;
 }
 
 #calcbutton{
     position: relative;
-    bottom: 680px;
+    bottom: 870px;
     left: 15%;
+}
+
+#calcbutton:hover{
+    background-color: white;
+    color: black;
+}
+
+.inputs{
+    font-size: 40px;
+    font-weight: bold;
 }

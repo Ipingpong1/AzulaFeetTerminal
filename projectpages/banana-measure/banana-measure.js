@@ -14,7 +14,7 @@ function lengthfinder(distance, height){
     var ans = 0 //blank final length
 
     for (var i = 0; i < (s/dx); i++) {
-        ans = ans + distance(i,dx,a,h,s,sd2) 
+        ans = ans + distanceBP(i,dx,a,h,s,sd2) 
       }
 
       return ans
@@ -29,7 +29,7 @@ function lengthfinder(distance, height){
  * @param {*} sd2 half the apparent length
  * @returns the distance between points on the parabola
  */
-function distance(n,dx,a,h,sd2){
+function distanceBP(n,dx,a,h,sd2){
     var xterm = dx
     var yterm = parab(n+1,dx,a,h,sd2)-parab(n,dx,a,h,sd2)
     var interm = (xterm*xterm)+(yterm*yterm)
@@ -48,4 +48,22 @@ function distance(n,dx,a,h,sd2){
  function parab(n,dx,a,h,sd2){
     var y = ((n*dx)-sd2)
     return((a*(y*y))+h)
+}
+
+function truncateNum(num, maxD){
+    str = String(num)
+    console.log(str)
+    ans = ''
+    for(i = 0; i < maxD; i ++){
+        ans+=str.charAt(i)
+    }
+ 
+    return parseFloat(ans)
+}
+
+function calculate(){
+    height = parseFloat(document.getElementById('heightin').value)
+    length = parseFloat(document.getElementById('lengthin').value)
+
+    document.getElementById('calctext').innerHTML = truncateNum(lengthfinder(length,height),5)+' inches'
 }
