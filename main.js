@@ -31,7 +31,7 @@ function keypress(e){
             
                 case '!projects':
                     addToMainBox('See Some Of My Projects-----------------------------------------------', 'orange')
-                    addToMainBox('!n-body-sim, !heat-equation-sim, !banana-measurer, !fourier-series-sim', 'teal')
+                    addToMainBox('!n-body-sim, !heat-equation-sim, !banana-measurer, !fourier-series-sim, !club-penguin-miner', 'teal')
                     addToMainBox('----------------------------------------------------------------------', 'orange')
                     passed=true
                     break
@@ -41,6 +41,11 @@ function keypress(e){
                         passed = true
                         break
                 
+                case '!resume':
+                    window.open('ResumeFinal-min-1.png')
+                    passed = true
+                    break
+
                 case '!random-garbage':
                     addToMainBox('Ignore This If You Are An Employer------------------', 'orange')
                     addToMainBox('!among-us, !GETOUTOFMYHEAD, ！こんにちは, !lolcat', 'teal')
