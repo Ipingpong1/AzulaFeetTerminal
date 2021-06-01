@@ -1,70 +1,138 @@
-body{
-    background-color: black;
+@media only screen and (max-width:991px) {
+    
+    body{
+        background-color: black;
+        text-align: center;
+    }
+
+    header{
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 2%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+    }
+
+    .textdiv{
+        padding-left: 1%;
+        border: white solid;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .rainbow-text{
+        background-clip: border-box;
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    #img{
+        position: relative;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .inputs{
+        align-self: center;
+    }
+
+    #heightin{
+        width: 50% !important;
+    }
+
+    #lengthin{
+        width: 50% !important;
+    }
+
+    #calcbutton{
+        width: 80% !important;
+        margin: 9% !important;
+        height: 80% !important;
+    }
+
+    #calcbutton:hover{
+        background-color: white;
+        color: black;
+    }
+
+    .inputs{
+        font-size: 40px;
+        font-weight: bold;
+    }
 }
 
-header{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 2%;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
-}
+@media only screen and (min-width:992px) {
+    
+    body{
+        background-color: black;
+    }
 
-.textdiv{
-    padding-left: 1%;
-    border: white solid;
-    position: relative;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-size: 20px;
-}
+    header{
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 2%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+    }
 
-#cmd{
-    position:relative;
-    left: 0px;
-    bottom: 0px;
-    background: transparent;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    font-weight: bold;
+    .textdiv{
+        padding-left: 1%;
+        border: white solid;
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 20px;
+    }
 
-    outline: none;
-    border: none;
-    outline-style: none;
-    box-shadow: none;
-    outline-width: 0;
-}
+    #cmd{
+        position:relative;
+        left: 0px;
+        bottom: 0px;
+        background: transparent;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+        font-weight: bold;
 
-.rainbow-text{
-    background-clip: border-box;
-    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text;
-    color: transparent;
-  }
+        outline: none;
+        border: none;
+        outline-style: none;
+        box-shadow: none;
+        outline-width: 0;
+    }
 
-#img{
-    position: relative;
-    left: 10%;
-}
+    .rainbow-text{
+        background-clip: border-box;
+        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text;
+        color: transparent;
+    }
 
-#inputs{
-    position: relative;
-    left: 55%;
-    bottom: 730px;
-}
+    #img{
+        position: relative;
+        left: 10%;
+    }
 
-#calcbutton{
-    position: relative;
-    bottom: 480px;
-    left: 15%;
-}
+    #inputs{
+        position: relative;
+        left: 55%;
+        bottom: 730px;
+    }
 
-#calcbutton:hover{
-    background-color: white;
-    color: black;
-}
+    #calcbutton{
+        position: relative;
+        bottom: 480px;
+        left: 15%;
+    }
 
-.inputs{
-    font-size: 40px;
-    font-weight: bold;
+    #calcbutton:hover{
+        background-color: white;
+        color: black;
+    }
+
+    .inputs{
+        font-size: 40px;
+        font-weight: bold;
+    }
 }
