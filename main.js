@@ -24,7 +24,7 @@ function keypress(e){
         switch(val){
             case '!help':
                 addToMainBox('Help Index-------------------------', 'orange')
-                addToMainBox('!projects, !resume, !random-garbage, !clear', 'teal')
+                addToMainBox('!projects, !resume, !spondooli, !clear', 'teal')
                 addToMainBox('-----------------------------------', 'orange')
                 passed = true
                 break
@@ -37,14 +37,19 @@ function keypress(e){
                     break
 
                     case '!banana-measure':
-                        window.open('projectpages/banana-measure/banana-measure.html','Banana Measuring Calculator')
+                        open('projectpages/banana-measure/banana-measure.html','Banana Measuring Calculator')
                         passed = true
                         break
 
                     case '!club-penguin-miner':
-                        window.open('projectpages/club-penguin-autominer/club-penguin-autominer.html','Club Penguin Autominer')
+                        open('projectpages/club-penguin-autominer/club-penguin-autominer.html','Club Penguin Autominer')
                         passed = true
                         break
+
+                case '!spondooli':
+                    window.open('https://www.spondooliofficial.com')
+                    passed = true
+                    break
                 
                 case '!resume':
                     window.open('ResumeFinal-min-1.png')
