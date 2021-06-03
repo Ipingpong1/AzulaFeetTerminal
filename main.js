@@ -46,6 +46,11 @@ function keypress(e){
                         passed = true
                         break
 
+                    case '!n-body-sim':
+                        open('projectpages/n-body-sim/n-body-sim.html')
+                        passed = true
+                        break
+
                 case '!spondooli':
                     window.open('https://www.spondooliofficial.com')
                     passed = true

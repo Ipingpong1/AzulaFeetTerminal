@@ -1,0 +1,51 @@
+@media only screen and (max-width: 991px) {
+
+    body{
+        background-color: black;
+        text-align: center;
+    }
+
+    header{
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 2%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+    }
+
+    .textdiv{
+        padding-left: 1%;
+        border: white solid;
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    body{
+        background-color: black;
+        text-align: center;
+    }
+    
+    header{
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 2%;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+    }
+    
+    .textdiv{
+        padding-left: 1%;
+        border: white solid;
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 20px;
+    }
+    
+}
