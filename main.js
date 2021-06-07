@@ -31,7 +31,7 @@ function keypress(e){
             
                 case '!projects':
                     addToMainBox('See Some Of My Projects-----------------------------------------------', 'orange')
-                    addToMainBox('!n-body-sim, !heat-equation-sim, !banana-measurer, !fourier-series-sim, !club-penguin-miner', 'teal')
+                    addToMainBox('!n-body-sim, !wave-solver, !banana-measurer, !club-penguin-miner', 'teal')
                     addToMainBox('----------------------------------------------------------------------', 'orange')
                     passed=true
                     break
@@ -48,6 +48,11 @@ function keypress(e){
 
                     case '!n-body-sim':
                         open('projectpages/n-body-sim/n-body-sim.html')
+                        passed = true
+                        break
+
+                    case '!wave-solver':
+                        open('projectpages/wave-solver-sim/wave-solver-sim.html')
                         passed = true
                         break
 
@@ -112,7 +117,7 @@ function keypress(e){
                 break
         }
 
-    const rg = new RegExp('^[0-9\-+*/()=xyz]*$')
+    const rg = new RegExp('^[0-9\-+.*/()=xyz]*$')
         console.log(rg.test(val))
         if(rg.test(val)==true){
             try {
