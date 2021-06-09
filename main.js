@@ -24,8 +24,13 @@ function keypress(e){
         switch(val){
             case '!help':
                 addToMainBox('Help Index-------------------------', 'orange')
-                addToMainBox('!projects, !resume, !spondooli, !clear', 'teal')
+                addToMainBox('!about, !projects, !resume, !spondooli, !clear', 'teal')
                 addToMainBox('-----------------------------------', 'orange')
+                passed = true
+                break
+
+                case '!about':
+                addToMainBox('')
                 passed = true
                 break
             

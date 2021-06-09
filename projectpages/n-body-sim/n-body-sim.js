@@ -4,7 +4,7 @@ function setup(){
 }
 
 mass = 10000
-radius = 30
+radius = 20
 planet_arr = []
 
 placeX = 0

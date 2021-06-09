@@ -38,6 +38,7 @@ class wavesolver{
                     2*this.u_mat[t][x][y]-this.u_mat[t-1][x][y]
                 }
             }
+            console.log(t)
         }
         solved = true
         return this.u_mat
@@ -75,7 +76,7 @@ function draw(){
                         fill(255,-50+clamp(-1*u2D[x][y]*500, 0, 255), 100-clamp(-1*u2D[x][y]*500, 0, 100))
                     }
                     noStroke()
-                    square(x*u.dx, y*u.dy, u.dx)
+                    rect(x*u.dx, y*u.dy, u.dx, u.dy)
                 }
             }
         }
@@ -95,8 +96,8 @@ function clamp(num, min, max){
 }
 
 function mousePressed(){
-    u = new wavesolver(window.innerWidth, 130, window.innerHeight, 130, tot_time, 'this.dt**2*Math.sin(t/10)', .2, 1, mouseX, mouseY)
-    document.getElementById('inst').innerHTML = 'Loading...'
+        u = new wavesolver(window.innerWidth, 130, window.innerHeight, 130, tot_time, 'this.dt**2*Math.sin(t/10)', .2, 1, mouseX, mouseY)
+        document.getElementById('inst').innerHTML = 'Loading...'
 }
 function mouseReleased(){
     usol = u.solve()

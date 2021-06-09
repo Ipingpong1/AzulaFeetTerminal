@@ -266,7 +266,7 @@ function collided(rplanet, oplanet){
  * @returns The scalar gravitational attraction between two planets
  */
 function gravitationalAttractionBetweenTwoPlanets(rplanet, oplanet){
-    G = .05
+    G = .03
     r = distanceBetweenTwoPlanets(rplanet, oplanet)
     return G*rplanet.mass*oplanet.mass/(r*r)
 }
