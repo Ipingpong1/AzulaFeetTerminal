@@ -30,7 +30,7 @@ function keypress(e){
                 break
 
                 case '!about':
-                addToMainBox('')
+                addToMainBox('about goes here')
                 passed = true
                 break
             
