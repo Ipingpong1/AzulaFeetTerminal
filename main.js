@@ -42,32 +42,32 @@ function keypress(e){
                     break
 
                     case '!banana-measure':
-                        open('projectpages/banana-measure/banana-measure.html','Banana Measuring Calculator')
+                        window.open('projectpages/banana-measure/banana-measure.html','Banana Measuring Calculator',"_self")
                         passed = true
                         break
 
                     case '!club-penguin-miner':
-                        open('projectpages/club-penguin-autominer/club-penguin-autominer.html','Club Penguin Autominer')
+                        window.open('projectpages/club-penguin-autominer/club-penguin-autominer.html','Club Penguin Autominer',"_self")
                         passed = true
                         break
 
                     case '!n-body-sim':
-                        open('projectpages/n-body-sim/n-body-sim.html')
+                        window.open('projectpages/n-body-sim/n-body-sim.html',"_self")
                         passed = true
                         break
 
                     case '!wave-solver':
-                        open('projectpages/wave-solver-sim/wave-solver-sim.html')
+                        window.open('projectpages/wave-solver-sim/wave-solver-sim.html',"_self")
                         passed = true
                         break
 
                 case '!spondooli':
-                    window.open('https://www.spondooliofficial.com')
+                    window.open('https://www.spondooliofficial.com',"_self")
                     passed = true
                     break
                 
                 case '!resume':
-                    window.open('ResumeFinal-min-1.png')
+                    window.open('ResumeFinal-min-1.png',"_self")
                     passed = true
                     break
 

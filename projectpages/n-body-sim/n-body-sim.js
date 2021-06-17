@@ -22,8 +22,8 @@ function draw(){
             if(planet_arr[i] != planet_arr[j]){
 
                 grav_vec = createVectorOfAngleAndMagnitude(
-                    angleBetweenPlanets(planet_arr[i], planet_arr[j]),
-                    gravitationalAttractionBetweenTwoPlanets(planet_arr[i], planet_arr[j])/planet_arr[i].mass
+                    angleBetweenOrbs(planet_arr[i], planet_arr[j]),
+                    gravitationalAttractionBetweenTwoOrbs(planet_arr[i], planet_arr[j])/planet_arr[i].mass
                 )
                 planet_arr[i].velocity.addVector(grav_vec)
             }
@@ -37,10 +37,10 @@ function draw(){
                     jvel = planet_arr[j].velocity.getMagnitude()
 
                     planet_arr[i].velocity = createVectorOfAngleAndMagnitude(
-                        angleBetweenPlanets(planet_arr[i], planet_arr[j])+180, jvel)
+                        angleBetweenOrbs(planet_arr[i], planet_arr[j])+180, jvel)
 
                     planet_arr[j].velocity = createVectorOfAngleAndMagnitude(
-                        angleBetweenPlanets(planet_arr[j], planet_arr[i])+180, ivel)
+                        angleBetweenOrbs(planet_arr[j], planet_arr[i])+180, ivel)
                 }
             }
         }
@@ -71,7 +71,7 @@ function mousePressed(){
     placeX = mouseX
     placeY = mouseY
 
-    nm = new planet(mass, radius)
+    nm = new orb(mass, radius)
     nm.position(placeX, height-placeY)
     nm.unmoving = true
 
