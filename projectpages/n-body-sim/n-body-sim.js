@@ -4,7 +4,7 @@ function setup(){
 }
 
 mass = 10000
-radius = 20
+radius = 30
 planet_arr = []
 
 placeX = 0
@@ -45,14 +45,18 @@ function draw(){
             }
         }
 
+        
         for(p=1;p<planet_arr[i].trace_mat_x.length;p++){
             stroke(50*planet_arr[i].trace_velocity[p],-80+50*planet_arr[i].trace_velocity[p],200-50*planet_arr[i].trace_velocity[p])
             fill(50*planet_arr[i].trace_velocity[p],-80+50*planet_arr[i].trace_velocity[p],200-50*planet_arr[i].trace_velocity[p])
             strokeWeight(3)
             line(planet_arr[i].trace_mat_x[p],planet_arr[i].trace_mat_y[p],planet_arr[i].trace_mat_x[p-1],planet_arr[i].trace_mat_y[p-1])
         }
+        
 
-        planet_arr[i].plot(255)
+        //planet_arr[i].plotTrace()
+
+        planet_arr[i].plot()
 
         if(planet_arr[i].unmoving == false){
             planet_arr[i].move()
@@ -63,7 +67,7 @@ function draw(){
         stroke(255)
         diffx = mouseX-placeX
         diffy = mouseY-placeY
-        arrow(placeX,height-placeY,-1*diffx,diffy,1)
+        arrow(placeX,height-placeY,-1*diffx,diffy,1,14,8)
     }
 }
 

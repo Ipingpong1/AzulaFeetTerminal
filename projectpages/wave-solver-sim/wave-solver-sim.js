@@ -81,7 +81,7 @@ function draw(){
             }
         }
 
-        t+=2
+        t+=3
         if(t>=u.t_vec.length-2){
             t=0
             go=false
@@ -96,7 +96,7 @@ function clamp(num, min, max){
 }
 
 function mousePressed(){
-        u = new wavesolver(window.innerWidth, 130, window.innerHeight, 130, tot_time, 'this.dt**2*Math.sin(t/10)', .2, 1, mouseX, mouseY)
+        u = new wavesolver(window.innerWidth, 160, window.innerHeight, 160, tot_time, 'this.dt**2*Math.sin(t/10)', .2, 1, mouseX, mouseY)
         document.getElementById('inst').innerHTML = 'Loading...'
 }
 function mouseReleased(){

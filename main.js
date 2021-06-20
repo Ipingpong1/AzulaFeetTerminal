@@ -122,7 +122,7 @@ function keypress(e){
                 break
         }
 
-    const rg = new RegExp('^[0-9\-+.*/()=xyz]*$')
+        const rg = new RegExp('^[0-9\-+.*/()=xyz]*$')
         console.log(rg.test(val))
         if(rg.test(val)==true){
             try {
