@@ -38,7 +38,6 @@ class wavesolver{
                     2*this.u_mat[t][x][y]-this.u_mat[t-1][x][y]
                 }
             }
-            console.log(t)
         }
         solved = true
         return this.u_mat
@@ -53,7 +52,11 @@ function setup(){
 var u;
 var usol;
 var u2D;
-tot_time = 4000
+if(window.innerWidth<991){
+    tot_time = 1000
+}else{
+    tot_time = 4000
+}
 go = false
 
 t = 0
@@ -70,7 +73,7 @@ function draw(){
                 stroke(255)
                 if(u2D[x][y]!=0){
                     if(u2D[x][y]>0){
-                        fill(clamp(u2D[x][y]*500, 0, 255),10-clamp(u2D[x][y]*500, 0, 255), 255)
+                        fill(clamp(u2D[x][y]*500, 0, 255), 10-clamp(u2D[x][y]*500, 0, 255), 255)
                     }
                     if(u2D[x][y]<0){
                         fill(255,-50+clamp(-1*u2D[x][y]*500, 0, 255), 100-clamp(-1*u2D[x][y]*500, 0, 100))
@@ -81,7 +84,7 @@ function draw(){
             }
         }
 
-        t+=3
+        t+=2
         if(t>=u.t_vec.length-2){
             t=0
             go=false
@@ -96,9 +99,10 @@ function clamp(num, min, max){
 }
 
 function mousePressed(){
-        u = new wavesolver(window.innerWidth, 160, window.innerHeight, 160, tot_time, 'this.dt**2*Math.sin(t/10)', .2, 1, mouseX, mouseY)
-        document.getElementById('inst').innerHTML = 'Loading...'
+    u = new wavesolver(window.innerWidth, 140, window.innerHeight, 140, tot_time, 'this.dt**2*Math.sin(t/10)', .2, 1, mouseX, mouseY)
+    document.getElementById('inst').innerHTML = 'Loading...'
 }
+
 function mouseReleased(){
     usol = u.solve()
     u2D = zeros2D(u.x_vec.length, u.y_vec.length)
@@ -106,5 +110,4 @@ function mouseReleased(){
     t=0
     document.getElementById('inst').innerHTML = 'Simulating'
 }
-
 

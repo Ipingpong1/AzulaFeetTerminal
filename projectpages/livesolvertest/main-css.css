@@ -10,7 +10,7 @@
         text-align: center;
         padding: 2%;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .textdiv{
@@ -20,21 +20,6 @@
         font-family: 'Courier New', Courier, monospace;
         color: white;
         font-size: 10px;
-    }
-
-    #video{
-        width: 100%;
-    }
-
-    .rainbow-text{
-        background-clip: border-box;
-        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text;
-        color: transparent;
-    }
-
-    #downloadbut:hover {
-        background-color: white;
-        color: black;
     }
 
 }
@@ -61,17 +46,6 @@
         font-family: 'Courier New', Courier, monospace;
         color: white;
         font-size: 20px;
-    }
-    
-    .rainbow-text{
-        background-clip: border-box;
-        background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text;
-        color: transparent;
-    }
-
-    #downloadbut:hover {
-        background-color: white;
-        color: black;
     }
     
 }

@@ -46,6 +46,11 @@ function keypress(e){
                         passed = true
                         break
 
+                    case '!beta-live':
+                        window.open('projectpages/livesolvertest/main.html','live solver',"_self")
+                        passed = true
+                        break
+
                     case '!club-penguin-miner':
                         window.open('projectpages/club-penguin-autominer/club-penguin-autominer.html','Club Penguin Autominer',"_self")
                         passed = true
