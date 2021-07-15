@@ -12,6 +12,14 @@
         font-size: 50px;
     }
 
+    header:hover{
+        content: "works";
+    }
+
+    #nottxt{
+        color: black !important;
+    }
+
     .textdiv{
         padding-left: 1%;
         border: white solid;
@@ -61,7 +69,27 @@
         font-family: 'Courier New', Courier, monospace;
         font-size: 50px;
     }
+
+    #nottxt{
+        animation-name: plzwork;
+        opacity: 0;
+        animation-duration: .1s;
+        animation-iteration-count: infinite;
+    }
+
+    header:hover #nottxt{
+        opacity: 100%;
+    }
     
+    @keyframes plzwork{
+        0%{color: violet; text-decoration: underline;}
+        25%{color: red; text-decoration: line-through;}
+        50%{color: blue; font-style: italic;}
+        75%{color: black; text-shadow: 0;}
+        100%{color: violet;}
+
+    }
+
     .textdiv{
         padding-left: 1%;
         border: white solid;
@@ -93,5 +121,6 @@
         background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); -webkit-background-clip: text;
         color: transparent;
     }
+
     
 }

@@ -49,11 +49,5 @@
         color: white;
         font-size: 20px;
     }
-
-    #info{
-        position: absolute;
-        right: 90%;
-        background-image:url(favicon.png);
-    }
     
 }

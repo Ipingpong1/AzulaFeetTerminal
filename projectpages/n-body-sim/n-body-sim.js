@@ -3,7 +3,7 @@ function setup(){
     background(0)
 }
 
-mass = 10000
+mass = 15000
 radius = 30
 planet_arr = []
 
@@ -67,7 +67,7 @@ function draw(){
         stroke(255)
         diffx = mouseX-placeX
         diffy = mouseY-placeY
-        arrow(placeX,height-placeY,-1*diffx,diffy,1,14,8)
+        arrow(placeX,height-placeY,-1*diffx,diffy,14,8,1)
     }
 }
 

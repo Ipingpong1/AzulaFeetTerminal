@@ -8,8 +8,7 @@ addToMainBox = (toAdd,color) => {
 function clr(){
     let mainboxdiv = document.getElementById('mainbox')
     mainboxdiv.innerHTML=''
-    addToMainBox('Welcome to the Azulafeet terminal lol')
-    addToMainBox("Type commands with \'<span style=\"color: teal;\">!</span>\', try <span style=\"color: teal;\">!help</span>")
+    addToMainBox("Type commands with \'<span style=\"color: DeepSkyBlue !important;\">!</span>\', try <span style=\"color: DeepSkyBlue;\">!help</span>")
 }
 
 rnbw = "transparent!important; background-clip:border-box!important; background-image:linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red) !important; -webkit-background-clip:text!important"
@@ -24,7 +23,7 @@ function keypress(e){
         switch(val){
             case '!help':
                 addToMainBox('Help Index-------------------------', 'orange')
-                addToMainBox('!about, !projects, !resume, !spondooli, !clear', 'teal')
+                addToMainBox('!about, !projects, !resume, !spondooli, !clear', 'DeepSkyBlue')
                 addToMainBox('-----------------------------------', 'orange')
                 passed = true
                 break
@@ -36,7 +35,7 @@ function keypress(e){
             
                 case '!projects':
                     addToMainBox('See Some Of My Projects-----------------------------------------------', 'orange')
-                    addToMainBox('!n-body-sim, !wave-solver, !banana-measurer, !club-penguin-miner', 'teal')
+                    addToMainBox('!n-body-sim, !wave-solver, !banana-measurer, !club-penguin-miner', 'DeepSkyBlue')
                     addToMainBox('----------------------------------------------------------------------', 'orange')
                     passed=true
                     break
@@ -47,7 +46,7 @@ function keypress(e){
                         break
 
                     case '!beta-live':
-                        window.open('projectpages/livesolvertest/main.html','live solver',"_self")
+                        window.open('projectpages/livesolvertest/main.html','live solver')
                         passed = true
                         break
 
@@ -66,6 +65,11 @@ function keypress(e){
                         passed = true
                         break
 
+                    case '!fractals':
+                        window.open("projectpages/fractals/fractals.html","_self")
+                        passed = true
+                        break
+
                 case '!spondooli':
                     window.open('https://www.spondooliofficial.com',"_self")
                     passed = true
@@ -78,7 +82,7 @@ function keypress(e){
 
                 case '!random-garbage':
                     addToMainBox('Ignore This If You Are An Employer------------------', 'orange')
-                    addToMainBox('!among-us, !GETOUTOFMYHEAD, ！こんにちは, !lolcat', 'teal')
+                    addToMainBox('!among-us, !GETOUTOFMYHEAD, ！こんにちは, !lolcat', 'DeepSkyBlue')
                     addToMainBox('----------------------------------------------------', 'orange')
 
                     passed=true
@@ -127,7 +131,7 @@ function keypress(e){
                 break
         }
 
-        const rg = new RegExp('^[0-9\-+.*/()=xyz]*$')
+        const rg = new RegExp('^[0-9\-+.*/()=xyz ]*$')
         console.log(rg.test(val))
         if(rg.test(val)==true){
             try {
