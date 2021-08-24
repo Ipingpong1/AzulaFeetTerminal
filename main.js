@@ -34,18 +34,18 @@ function keypress(e){
                 break
             
                 case '!projects':
-                    addToMainBox('See Some Of My Projects-----------------------------------------------', 'orange')
-                    addToMainBox('!n-body-sim, !wave-solver, !banana-measurer, !club-penguin-miner', 'DeepSkyBlue')
-                    addToMainBox('----------------------------------------------------------------------', 'orange')
+                    addToMainBox('See Some Of My Projects----------------------------------------------------', 'orange')
+                    addToMainBox('!n-body-sim, !wavesolver, !banana-measurer, !club-penguin-miner, !fractals', 'DeepSkyBlue')
+                    addToMainBox('---------------------------------------------------------------------------', 'orange')
                     passed=true
                     break
 
-                    case '!banana-measure':
+                    case '!banana-measurer':
                         window.open('projectpages/banana-measure/banana-measure.html','Banana Measuring Calculator',"_self")
                         passed = true
                         break
 
-                    case '!beta-live':
+                    case '!live-wavesolver':
                         window.open('projectpages/livesolvertest/main.html','live solver')
                         passed = true
                         break
@@ -60,7 +60,7 @@ function keypress(e){
                         passed = true
                         break
 
-                    case '!wave-solver':
+                    case '!wavesolver':
                         window.open('projectpages/wave-solver-sim/wave-solver-sim.html',"_self")
                         passed = true
                         break
